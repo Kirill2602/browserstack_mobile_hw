@@ -1,6 +1,6 @@
 package com.browserstack.tests.mobile.ios;
 
-import com.browserstack.tests.mobile.android.TestBase;
+import com.browserstack.tests.mobile.TestBase;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 

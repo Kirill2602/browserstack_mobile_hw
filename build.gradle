@@ -34,7 +34,8 @@ dependencies {
             "com.github.javafaker:javafaker:1.0.2",
             "org.junit.jupiter:junit-jupiter:5.9.2",
             "org.slf4j:slf4j-simple:1.7.32",
-            'org.aeonbits.owner:owner-java8:1.0.12'
+            'org.aeonbits.owner:owner-java8:1.0.12',
+            'io.github.bonigarcia:webdrivermanager:5.3.2'
     )
     testCompileOnly(
             "org.projectlombok:lombok:1.18.24"
@@ -49,18 +50,6 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-task ios(type: Test) {
-    useJUnitPlatform {
-        includeTags("ios")
-    }
-}
-
-task android(type: Test) {
-    useJUnitPlatform {
-        includeTags("android")
-    }
-}
-
 tasks.withType(Test) {
     systemProperties(System.getProperties())
     useJUnitPlatform()
@@ -70,5 +59,17 @@ tasks.withType(Test) {
             events "started", "skipped", "failed", "standard_error", "standard_out"
             exceptionFormat "short"
         }
+    }
+}
+
+task ios(type: Test) {
+    useJUnitPlatform {
+        includeTags 'ios'
+    }
+}
+
+task android(type: Test) {
+    useJUnitPlatform {
+        includeTags 'android'
     }
 }

@@ -1,4 +1,4 @@
-package com.browserstack.tests.mobile.android;
+package com.browserstack.tests.mobile;
 
 import com.browserstack.drivers.BrowserstackDrivers;
 import com.browserstack.helpers.Attach;
@@ -15,6 +15,7 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browser = BrowserstackDrivers.class.getName();
+        System.out.println("Сюда доходит");
         Configuration.browserSize = null;
     }
 
