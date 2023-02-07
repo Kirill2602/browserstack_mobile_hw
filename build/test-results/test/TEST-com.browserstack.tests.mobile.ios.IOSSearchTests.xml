@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.browserstack.tests.mobile.ios.IOSSearchTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-02-06T07:25:31" hostname="DESKTOP-KI4MSLG" time="40.704">
+  <properties/>
+  <testcase name="checkOutputTextTest()" classname="com.browserstack.tests.mobile.ios.IOSSearchTests" time="40.704"/>
+  <system-out><![CDATA[Request method:	GET
+Request URI:	https://api.browserstack.com/app-automate/sessions/3eb1c681b92110431843744ffc13135762c5f5d3.json
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+]]></system-out>
+  <system-err><![CDATA[февр. 06, 2023 10:25:31 AM org.openqa.selenium.remote.tracing.opentelemetry.OpenTelemetryTracer createTracer
+INFO: Using OpenTelemetry for tracing
+февр. 06, 2023 10:25:33 AM org.openqa.selenium.remote.RemoteWebDriver checkNonW3CCapabilities
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [app, browserstack.key, browserstack.user, build, device, name, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+февр. 06, 2023 10:25:57 AM org.openqa.selenium.remote.ProtocolHandshake createSession
+WARNING: Support for Legacy Capabilities is deprecated; You are sending the following invalid capabilities: [app, browserstack.key, browserstack.user, build, device, name, os_version, project]; Please update to W3C Syntax: https://www.selenium.dev/blog/2022/legacy-protocol-support/
+]]></system-err>
+</testsuite>
