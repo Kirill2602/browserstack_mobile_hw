@@ -24,7 +24,6 @@ public class BrowserstackDrivers implements WebDriverProvider {
         MutableCapabilities mutableCapabilities = new MutableCapabilities();
         mutableCapabilities.merge(capabilities);
 
-        mutableCapabilities.setCapability("device", "iPhone 14 Pro Max");
         mutableCapabilities.setCapability("app", config.appUrl());
         mutableCapabilities.setCapability("device", config.device());
         mutableCapabilities.setCapability("os_version", config.osVersion());
