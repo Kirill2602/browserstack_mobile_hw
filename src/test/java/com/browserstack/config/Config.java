@@ -3,8 +3,7 @@ package com.browserstack.config;
 @Config.LoadPolicy(Config.LoadType.MERGE)
 @org.aeonbits.owner.Config.Sources(
         {"system:properties",
-                "classpath:${env}.properties",
-                "classpath:credentials.properties"})
+                "classpath:${env}.properties"})
 public interface Config extends org.aeonbits.owner.Config {
     @Key("login")
     String login();

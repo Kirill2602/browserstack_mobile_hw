@@ -15,7 +15,6 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browser = BrowserstackDrivers.class.getName();
-        System.out.println("Сюда доходит");
         Configuration.browserSize = null;
     }
 
@@ -29,7 +28,7 @@ public class TestBase {
     void addAttachments() {
         String sessionId = sessionId().toString();
 
-//        Attach.screenshotAs("Last screenshot");
+        Attach.screenshotAs("Last screenshot");
         Attach.pageSource();
 
         closeWebDriver();
