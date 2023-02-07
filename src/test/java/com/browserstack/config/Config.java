@@ -1,6 +1,8 @@
 package com.browserstack.config;
 
-@org.aeonbits.owner.Config.Sources({"classpath:credentials.properties"})
+@org.aeonbits.owner.Config.Sources(
+        {"system:properties",
+        "classpath:${env}.properties"})
 public interface Config extends org.aeonbits.owner.Config {
     @Key("login")
     String login();
