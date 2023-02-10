@@ -1,6 +1,8 @@
 package com.browserstack.helpers;
 
+import com.codeborne.selenide.Selenide;
 import io.qameta.allure.Attachment;
+import org.bouncycastle.asn1.BERApplicationSpecific;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 
@@ -22,7 +24,7 @@ public class Attach {
 
     @Attachment(value = "{attachName}", type = "image/png")
     public static byte[] screenshotAs(String attachName) {
-        return ((TakesScreenshot) getWebDriver()).getScreenshotAs(OutputType.BYTES);
+        return Selenide.screenshot(OutputType.BYTES);
     }
 
     @Attachment(value = "Video", type = "text/html", fileExtension = ".html")
