@@ -9,9 +9,8 @@ import static io.qameta.allure.Allure.step;
 import static java.lang.String.format;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.openqa.selenium.By.id;
-
-@Tag("ios")
 public class IOSSearchTests extends TestBase {
+    @Tag("ios")
     @Test
     void checkOutputTextTest() {
         step("Click Text Button", () -> {
